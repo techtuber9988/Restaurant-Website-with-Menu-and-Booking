@@ -4,9 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=200&section=header&text=🍽️%20La%20Maison%20d'Or&fontSize=42&fontAlignY=35&desc=Fine%20Dining%20Restaurant%20Website&descSize=18&descAlignY=55&animation=twinkling&fontColor=ffffff" width="100%"/>
 
 <!-- Typing Animation -->
-<a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=Playfair+Display&weight=600&size=28&pause=1000&color=C8A97E&center=true&vCenter=true&multiline=true&width=700&height=80&lines=Experience+Culinary+Excellence;Where+Every+Dish+Tells+a+Story;Reserve+Your+Unforgettable+Evening" alt="Typing SVG" />
-</a>
+<img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&weight=400&size=20&pause=2000&color=C8A97E&center=true&vCenter=true&width=500&height=30&lines=Bon+Appétit+🍷" alt="Typing SVG" width="100%" />
 
 <!-- Badges Row 1 -->
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
