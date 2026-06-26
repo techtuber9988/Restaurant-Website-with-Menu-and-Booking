@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Maison d'Or — Fine Dining Restaurant</title>
+  <meta name="description" content="Experience exquisite French-inspired fine dining at La Maison d'Or. Seasonal menus crafted by award-winning chefs with locally sourced ingredients. Reserve your table today.">
+  <meta name="keywords" content="fine dining, restaurant, French cuisine, reservation, gourmet food">
+  <meta name="author" content="La Maison d'Or">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+</head>
+<body>
+
+  <!-- Loader -->
+  <div class="loader" id="page-loader">
+    <div class="loader__spinner"></div>
+    <div class="loader__text">La Maison d'Or</div>
+  </div>
+
+  <!-- Cursor Glow -->
+  <div class="cursor-glow"></div>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="menu-overlay"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="main-navbar">
+    <div class="container">
+      <div class="navbar__inner">
+        <a href="index.html" class="navbar__brand">
+          <div>
+            <span class="navbar__logo">La Maison d'Or</span>
+            <span class="navbar__logo-accent">Est. 1998</span>
+          </div>
+        </a>
+
+        <ul class="navbar__menu" id="nav-menu">
+          <li><a href="index.html" class="navbar__link active">Home</a></li>
+          <li><a href="menu.html" class="navbar__link">Menu</a></li>
+          <li><a href="booking.html" class="navbar__link">Reservations</a></li>
+          <li><a href="contact.html" class="navbar__link">Contact</a></li>
+        </ul>
+
+        <div class="navbar__actions">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <span class="icon-moon">🌙</span>
+            <span class="icon-sun">☀️</span>
+          </button>
+          <a href="booking.html" class="btn btn--primary" style="display:none;" id="nav-cta">Book a Table</a>
+          <div class="navbar__toggle" id="menu-toggle" aria-label="Toggle navigation menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero__bg">
+      <img src="images/hero-bg.png" alt="Elegant restaurant interior with warm lighting" width="1920" height="1080" loading="eager">
+    </div>
+    <div class="hero__content">
+      <span class="hero__label reveal" style="animation: fadeInDown 0.8s ease 0.3s both;">✦ Award-Winning French Cuisine ✦</span>
+      <h1 class="hero__title" style="animation: fadeInUp 1s ease 0.5s both;">
+        A Taste of<br><span class="gold">Elegance</span>
+      </h1>
+      <p class="hero__subtitle" style="animation: fadeInUp 1s ease 0.7s both;">
+        Where culinary artistry meets timeless sophistication.<br>
+        Every dish tells a story of passion and perfection.
+      </p>
+      <div class="hero__cta" style="animation: fadeInUp 1s ease 0.9s both;">
+        <a href="menu.html" class="btn btn--primary btn--lg">
+          Explore Our Menu <span class="btn-icon">→</span>
+        </a>
+        <a href="booking.html" class="btn btn--outline btn--lg" style="border-color:rgba(255,255,255,0.4);color:#fff;">
+          Reserve a Table
+        </a>
+      </div>
+    </div>
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- About / Story Section -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Our Story</span>
+        <h2 class="heading-2">A Legacy of Culinary Excellence</h2>
+        <div class="section-divider"></div>
+        <p class="body-lg">Since 1998, La Maison d'Or has been a beacon of fine dining, blending traditional French culinary techniques with contemporary innovation and locally sourced ingredients.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-card__icon">🏆</div>
+          <h3 class="feature-card__title">Award Winning</h3>
+          <p class="feature-card__desc">Three Michelin stars and countless accolades recognizing our commitment to culinary perfection and exceptional service.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-card__icon">🌿</div>
+          <h3 class="feature-card__title">Farm to Table</h3>
+          <p class="feature-card__desc">We partner with local farms and artisan producers to source the freshest seasonal ingredients for every dish we create.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-card__icon">🍷</div>
+          <h3 class="feature-card__title">Curated Wine List</h3>
+          <p class="feature-card__desc">Over 500 carefully selected wines from prestigious vineyards, paired perfectly by our expert sommeliers.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="section section--sm stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal reveal-delay-1">
+          <div class="stat-item__number" data-counter="25" data-suffix="+">0</div>
+          <div class="stat-item__label">Years of Excellence</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-2">
+          <div class="stat-item__number" data-counter="3">0</div>
+          <div class="stat-item__label">Michelin Stars</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-3">
+          <div class="stat-item__number" data-counter="500" data-suffix="+">0</div>
+          <div class="stat-item__label">Wine Selection</div>
+        </div>
+        <div class="stat-item reveal reveal-delay-4">
+          <div class="stat-item__number" data-counter="50000" data-suffix="+">0</div>
+          <div class="stat-item__label">Happy Guests</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Signature Dishes Section -->
+  <section class="section" id="signature-dishes">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Chef's Selection</span>
+        <h2 class="heading-2">Signature Creations</h2>
+        <div class="section-divider"></div>
+        <p class="body-lg">Discover our most celebrated dishes, each crafted with meticulous attention to detail and the finest ingredients.</p>
+      </div>
+
+      <div class="features-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="card reveal reveal-delay-1">
+          <div class="card__image">
+            <img src="images/dish-appetizer.png" alt="Seared scallops appetizer with cauliflower puree" width="600" height="450" loading="lazy">
+            <div class="card__image-overlay"></div>
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Appetizer</span>
+            <h3 class="card__title">Seared Scallops</h3>
+            <p class="card__desc">Pan-seared diver scallops with cauliflower purée, truffle oil, and microgreen garnish.</p>
+          </div>
+        </div>
+
+        <div class="card reveal reveal-delay-2">
+          <div class="card__image">
+            <img src="images/dish-main.png" alt="Wagyu beef steak with roasted vegetables" width="600" height="450" loading="lazy">
+            <div class="card__image-overlay"></div>
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Main Course</span>
+            <h3 class="card__title">Wagyu Beef Tenderloin</h3>
+            <p class="card__desc">Grade A5 Wagyu with roasted heritage vegetables and red wine reduction.</p>
+          </div>
+        </div>
+
+        <div class="card reveal reveal-delay-3">
+          <div class="card__image">
+            <img src="images/dish-dessert.png" alt="Chocolate fondant dessert with vanilla ice cream" width="600" height="450" loading="lazy">
+            <div class="card__image-overlay"></div>
+          </div>
+          <div class="card__body">
+            <span class="card__tag">Dessert</span>
+            <h3 class="card__title">Chocolate Fondant</h3>
+            <p class="card__desc">Valrhona dark chocolate fondant with vanilla bean ice cream and gold leaf.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center" style="margin-top: var(--space-3xl);">
+        <a href="menu.html" class="btn btn--outline reveal">
+          View Full Menu <span class="btn-icon">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Parallax CTA Section -->
+  <section class="parallax-section">
+    <div class="parallax-section__bg">
+      <img src="images/interior.png" alt="Restaurant interior ambiance" width="1920" height="1080" loading="lazy">
+    </div>
+    <div class="parallax-section__content">
+      <span class="label reveal" style="color: var(--color-primary-light);">Private Events</span>
+      <h2 class="heading-2 reveal" style="color: #fff; margin: var(--space-lg) 0;">An Unforgettable Experience Awaits</h2>
+      <div class="decorative-line reveal"></div>
+      <p class="body-lg reveal" style="color: rgba(255,255,255,0.8);">
+        Host your next celebration with us. From intimate dinners to grand soirées, our team creates bespoke experiences tailored to your vision.
+      </p>
+      <div style="margin-top: var(--space-2xl);" class="reveal">
+        <a href="booking.html" class="btn btn--primary btn--lg">
+          Reserve Your Evening <span class="btn-icon">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Testimonials</span>
+        <h2 class="heading-2">What Our Guests Say</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal reveal-delay-1">
+          <div class="testimonial-card__quote">"</div>
+          <p class="testimonial-card__text">An absolutely transcendent dining experience. Every course was a masterpiece, and the service was impeccable. This is fine dining at its very best.</p>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #c8a97e, #a68a5b); display:flex; align-items:center; justify-content:center; color: white; font-weight: 600; font-size: 1.2rem;">E</div>
+            <div>
+              <div class="testimonial-card__name">Eleanor Whitfield</div>
+              <div class="testimonial-card__role">Food Critic, The Gourmet Review</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-2">
+          <div class="testimonial-card__quote">"</div>
+          <p class="testimonial-card__text">We celebrated our anniversary here and it was pure magic. The tasting menu paired with their wine selection created an unforgettable evening.</p>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #8b6914, #c8a97e); display:flex; align-items:center; justify-content:center; color: white; font-weight: 600; font-size: 1.2rem;">J</div>
+            <div>
+              <div class="testimonial-card__name">James & Sofia Hartley</div>
+              <div class="testimonial-card__role">Loyal Patrons</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal-delay-3">
+          <div class="testimonial-card__quote">"</div>
+          <p class="testimonial-card__text">The attention to detail is extraordinary — from the amuse-bouche to the petit fours. Chef Laurent's creativity knows no bounds. A true culinary destination.</p>
+          <div class="testimonial-card__stars">★★★★★</div>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar" style="background: linear-gradient(135deg, #a68a5b, #8b6914); display:flex; align-items:center; justify-content:center; color: white; font-weight: 600; font-size: 1.2rem;">M</div>
+            <div>
+              <div class="testimonial-card__name">Marcus Chen</div>
+              <div class="testimonial-card__role">Culinary Travel Blogger</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Banner -->
+  <section class="section section--sm">
+    <div class="container">
+      <div class="special-banner reveal">
+        <div class="special-banner__content">
+          <h3 class="special-banner__title">Sunday Brunch Experience</h3>
+          <p class="special-banner__desc">Join us every Sunday for a lavish brunch featuring champagne, live jazz, and a curated selection of our finest dishes. Limited seating available.</p>
+        </div>
+        <a href="booking.html" class="btn btn--primary">Reserve Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Gallery</span>
+        <h2 class="heading-2">A Visual Journey</h2>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <div class="gallery-item">
+          <img src="images/interior.png" alt="Elegant restaurant interior" width="800" height="600" loading="lazy">
+          <div class="gallery-item__overlay"><span>The Dining Room</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/dish-appetizer.png" alt="Fine dining appetizer" width="400" height="300" loading="lazy">
+          <div class="gallery-item__overlay"><span>Appetizers</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/dish-main.png" alt="Signature main course" width="400" height="300" loading="lazy">
+          <div class="gallery-item__overlay"><span>Main Courses</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/chef.png" alt="Chef preparing a dish" width="400" height="300" loading="lazy">
+          <div class="gallery-item__overlay"><span>Our Kitchen</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/dish-dessert.png" alt="Dessert creation" width="800" height="300" loading="lazy">
+          <div class="gallery-item__overlay"><span>Desserts</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/hero-bg.png" alt="Restaurant ambiance" width="400" height="300" loading="lazy">
+          <div class="gallery-item__overlay"><span>Ambiance</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">La Maison d'Or</div>
+          <p class="footer__brand-desc">A sanctuary of culinary excellence where tradition meets innovation. Experience the art of fine dining in an atmosphere of timeless elegance.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="footer__social-link" aria-label="TripAdvisor">✈</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Home</a></li>
+            <li><a href="menu.html" class="footer__link">Our Menu</a></li>
+            <li><a href="booking.html" class="footer__link">Reservations</a></li>
+            <li><a href="contact.html" class="footer__link">Contact Us</a></li>
+            <li><a href="#" class="footer__link">Private Events</a></li>
+            <li><a href="#" class="footer__link">Gift Cards</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__heading">Hours</h4>
+          <ul class="footer__links">
+            <li class="footer__link" style="cursor:default;">Mon–Fri: 12:00 – 22:00</li>
+            <li class="footer__link" style="cursor:default;">Saturday: 11:00 – 23:00</li>
+            <li class="footer__link" style="cursor:default;">Sunday: 11:00 – 21:00</li>
+            <li class="footer__link" style="cursor:default; margin-top: var(--space-md); color: var(--color-primary);">Sunday Brunch: 10:00 – 14:00</li>
+          </ul>
+        </div>
+
+        <div class="footer__newsletter">
+          <h4 class="footer__heading">Newsletter</h4>
+          <p style="font-size: var(--fs-sm); color: var(--color-text-secondary); margin-bottom: var(--space-md);">Subscribe for seasonal menus, exclusive events, and special offers.</p>
+          <div class="footer__newsletter-input">
+            <input type="email" placeholder="Your email address" aria-label="Email for newsletter">
+            <button aria-label="Subscribe to newsletter">→</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2024 La Maison d'Or. All rights reserved.</span>
+        <span>Crafted with passion & precision</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Success Modal -->
+  <div class="modal-overlay" id="success-modal">
+    <div class="modal">
+      <div class="modal__icon">✓</div>
+      <h3 class="modal__title">Success!</h3>
+      <p class="modal__text">Your request has been processed successfully.</p>
+      <button class="btn btn--primary modal__close">Close</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
