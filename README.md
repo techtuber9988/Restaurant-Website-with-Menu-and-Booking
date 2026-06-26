@@ -4,7 +4,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24&height=200&section=header&text=🍽️%20La%20Maison%20d'Or&fontSize=42&fontAlignY=35&desc=Fine%20Dining%20Restaurant%20Website&descSize=18&descAlignY=55&animation=twinkling&fontColor=ffffff" width="100%"/>
 
 <!-- Typing Animation -->
-<img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&weight=400&size=20&pause=2000&color=C8A97E&center=true&vCenter=true&width=500&height=30&lines=Bon+Appétit+🍷" alt="Typing SVG" width="100%" />
+<img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&weight=400&size=20&pause=2000&color=C8A97E&center=true&vCenter=true&width=500&height=30&lines=Bon+App%C3%A9tit+%F0%9F%8D%B7" alt="Typing SVG" width="100%" />
 
 <!-- Badges Row 1 -->
 [![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
@@ -388,14 +388,6 @@ This project is licensed under the MIT License — see the [LICENSE](LICENSE) fi
 
 <br/>
 
-**Made with ❤️ and ☕ by [The Developers Arena](https://github.com/the-developers-arena)**
-
-<a href="#">
-  <img src="https://readme-typing-svg.demolab.com?font=Cormorant+Garamond&weight=400&size=20&pause=2000&color=C8A97E&center=true&vCenter=true&width=500&height=30&lines=Bon+Appétit+🍷" alt="Typing SVG" />
-</a>
-
-<br/><br/>
-
-[![⬆ Back to Top](#)](https://github.com/your-username/Restaurant-Website-with-Menu-and-Booking#)
+**Made with ❤️ and ☕**
 
 </div>
