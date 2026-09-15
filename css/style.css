@@ -2139,3 +2139,176 @@ ul, ol {
   margin-bottom: var(--space-2xl);
   line-height: 1.7;
 }
+/* =====================================================
+   SMART RESERVATION VALIDATION ENHANCEMENTS
+   ===================================================== */
+
+/* Reservation form helper text */
+.form-help {
+  display: block;
+  margin-top: 6px;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--color-text-muted);
+}
+
+/* Validation error state */
+.form-input.error,
+.form-select.error,
+.form-textarea.error {
+  border-color: var(--color-error) !important;
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.1);
+  animation: inputErrorShake 0.25s ease;
+}
+
+/* Validation success state */
+.form-input.success,
+.form-select.success,
+.form-textarea.success {
+  border-color: var(--color-success) !important;
+  box-shadow: 0 0 0 3px rgba(45, 138, 78, 0.08);
+}
+
+/* Error message */
+.form-error {
+  display: none;
+  min-height: 18px;
+  margin-top: 6px;
+  font-size: var(--fs-xs);
+  line-height: 1.4;
+  color: var(--color-error);
+}
+
+/* Show error message when JavaScript adds visible class */
+.form-error.visible {
+  display: block;
+  animation: slideDown 0.3s ease;
+}
+
+/* Also support dynamically generated error messages */
+.form-error:not(:empty) {
+  display: block;
+  animation: slideDown 0.3s ease;
+}
+
+/* Guest availability/helper feedback */
+#guest-help {
+  min-height: 20px;
+  margin-top: 7px;
+  font-size: var(--fs-xs);
+  line-height: 1.5;
+  color: var(--color-text-muted);
+  transition: color var(--transition-base);
+}
+
+#guest-help.success {
+  color: var(--color-success);
+}
+
+#guest-help.warning {
+  color: var(--color-warning);
+}
+
+#guest-help.error {
+  color: var(--color-error);
+}
+
+/* Date input minimum-date helper */
+#booking-date-help {
+  color: var(--color-text-muted);
+}
+
+/* Disabled/loading submit button */
+#booking-submit:disabled {
+  opacity: 0.75;
+  cursor: wait;
+  pointer-events: none;
+}
+
+/* Button loading state */
+#booking-submit.is-loading {
+  position: relative;
+  color: transparent;
+  pointer-events: none;
+}
+
+#booking-submit.is-loading::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border: 2px solid rgba(255, 255, 255, 0.45);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: rotate 0.7s linear infinite;
+}
+
+/* Accessible invalid field focus */
+.form-input[aria-invalid="true"],
+.form-select[aria-invalid="true"],
+.form-textarea[aria-invalid="true"] {
+  border-color: var(--color-error) !important;
+}
+
+/* Focus state for invalid fields */
+.form-input[aria-invalid="true"]:focus,
+.form-select[aria-invalid="true"]:focus,
+.form-textarea[aria-invalid="true"]:focus {
+  box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.15);
+}
+
+/* Smooth form feedback animation */
+@keyframes inputErrorShake {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-3px);
+  }
+
+  50% {
+    transform: translateX(3px);
+  }
+
+  75% {
+    transform: translateX(-2px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Mobile reservation form improvements */
+@media (max-width: 768px) {
+  .booking-form {
+    padding: var(--space-xl);
+  }
+
+  .form-input,
+  .form-select,
+  .form-textarea {
+    font-size: 16px;
+  }
+
+  .form-help,
+  .form-error,
+  #guest-help {
+    font-size: 0.75rem;
+  }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .form-input.error,
+  .form-select.error,
+  .form-textarea.error {
+    animation: none;
+  }
+
+  .form-error,
+  .form-error.visible {
+    animation: none;
+  }
+}
