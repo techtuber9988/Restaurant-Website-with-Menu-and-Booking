@@ -1,7 +1,6 @@
 /* =====================================================
    LA MAISON D'OR — Main JavaScript
    ===================================================== */
-
 document.addEventListener('DOMContentLoaded', () => {
   initLoader();
   initThemeToggle();
@@ -16,8 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initSmoothScroll();
   initParallax();
 });
-
-
 /* ── Page Loader ── */
 
 function initLoader() {
@@ -31,17 +28,12 @@ function initLoader() {
       document.body.style.overflow = '';
     }, 800);
   });
-
   // Fallback: hide loader after 3 seconds
   setTimeout(() => {
     loader.classList.add('hidden');
     document.body.style.overflow = '';
   }, 3000);
 }
-
-
-/* ── Theme Toggle ── */
-
 function initThemeToggle() {
   const toggle = document.getElementById('theme-toggle');
 
