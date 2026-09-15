@@ -3,208 +3,392 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Reservations — La Maison d'Or</title>
-  <meta name="description" content="Reserve your table at La Maison d'Or. Book online for an unforgettable fine dining experience. Private dining rooms available for special occasions.">
+  <meta
+    name="description"
+    content="Reserve your table at La Maison d'Or and enjoy an unforgettable fine dining experience."
+  >
+
   <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍽️</text></svg>">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
 </head>
+
 <body>
 
-  <!-- Loader -->
-  <div class="loader" id="page-loader">
-    <div class="loader__spinner"></div>
-    <div class="loader__text">La Maison d'Or</div>
-  </div>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-container">
 
-  <div class="cursor-glow"></div>
-  <div class="menu-overlay"></div>
+      <a href="index.html" class="logo" aria-label="La Maison d'Or Home">
+        <span class="logo-main">La Maison</span>
+        <span class="logo-sub">D'OR</span>
+      </a>
 
-  <!-- Navigation -->
-  <nav class="navbar scrolled" id="main-navbar">
-    <div class="container">
-      <div class="navbar__inner">
-        <a href="index.html" class="navbar__brand">
-          <div>
-            <span class="navbar__logo">La Maison d'Or</span>
-            <span class="navbar__logo-accent">Est. 1998</span>
-          </div>
-        </a>
-        <ul class="navbar__menu" id="nav-menu">
-          <li><a href="index.html" class="navbar__link">Home</a></li>
-          <li><a href="menu.html" class="navbar__link">Menu</a></li>
-          <li><a href="booking.html" class="navbar__link active">Reservations</a></li>
-          <li><a href="contact.html" class="navbar__link">Contact</a></li>
-        </ul>
-        <div class="navbar__actions">
-          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
-            <span class="icon-moon">🌙</span>
-            <span class="icon-sun">☀️</span>
-          </button>
-          <div class="navbar__toggle" id="menu-toggle" aria-label="Toggle navigation menu">
-            <span></span><span></span><span></span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+      <button
+        class="mobile-menu-toggle"
+        id="mobile-menu-toggle"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        type="button"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-  <!-- Page Header -->
-  <header class="page-header">
-    <div class="page-header__bg">
-      <img src="images/interior.png" alt="Restaurant interior" width="1920" height="600" loading="eager">
-    </div>
-    <div class="page-header__content">
-      <div class="page-header__breadcrumb" style="animation: fadeInDown 0.6s ease 0.2s both;">
+      <nav class="main-nav" id="main-nav" aria-label="Main navigation">
         <a href="index.html">Home</a>
-        <span class="separator">✦</span>
-        <span>Reservations</span>
-      </div>
-      <h1 class="page-header__title" style="animation: fadeInUp 0.8s ease 0.3s both;">Reserve Your Table</h1>
-      <p class="page-header__subtitle" style="animation: fadeInUp 0.8s ease 0.5s both;">An evening of extraordinary dining awaits</p>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">Our Story</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reservation.html" class="active">Reservations</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="reservation.html" class="header-reserve-btn">
+        Reserve a Table
+      </a>
+
     </div>
   </header>
 
-  <!-- Booking Section -->
-  <section class="section booking-section">
-    <div class="container">
-      <div class="booking-grid">
-        <!-- Left: Info -->
-        <div class="booking-info">
-          <div class="reveal">
-            <span class="label">Reserve</span>
-            <h2 class="heading-2" style="margin: var(--space-md) 0;">Your Perfect Evening</h2>
-            <p class="body-lg" style="margin-bottom: var(--space-2xl);">Whether it's a romantic dinner, a celebration, or a business gathering, we ensure every detail is perfect.</p>
+
+  <!-- Page Hero -->
+  <section class="page-hero reservation-hero">
+    <div class="container page-hero-content">
+      <span class="eyebrow">Your Table Awaits</span>
+
+      <h1>Make a Reservation</h1>
+
+      <p>
+        Join us for an unforgettable culinary experience where every detail
+        is crafted with care.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Reservation Section -->
+  <main>
+
+    <section class="reservation-section section-padding">
+      <div class="container">
+
+        <div class="reservation-layout">
+
+          <!-- Reservation Information -->
+          <div class="reservation-info">
+
+            <span class="eyebrow">A Moment to Remember</span>
+
+            <h2>
+              An Evening of
+              <span>Exceptional Dining</span>
+            </h2>
+
+            <p class="reservation-intro">
+              At La Maison d'Or, every visit is an occasion. Reserve your table
+              and allow us to create an experience that lingers long after
+              the final course.
+            </p>
+
+            <div class="reservation-details">
+
+              <div class="reservation-detail-item">
+                <div class="detail-icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="12" cy="12" r="9"></circle>
+                    <polyline points="12 7 12 12 15 14"></polyline>
+                  </svg>
+                </div>
+
+                <div>
+                  <h3>Opening Hours</h3>
+                  <p>Tuesday – Sunday</p>
+                  <p>Lunch: 12:00 PM – 3:00 PM</p>
+                  <p>Dinner: 6:00 PM – 11:00 PM</p>
+                  <p class="detail-note">Closed on Mondays</p>
+                </div>
+              </div>
+
+
+              <div class="reservation-detail-item">
+                <div class="detail-icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 0 1 18 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+
+                <div>
+                  <h3>Find Us</h3>
+                  <p>18 Rue de la Lumière</p>
+                  <p>Paris, France 75001</p>
+                </div>
+              </div>
+
+
+              <div class="reservation-detail-item">
+                <div class="detail-icon" aria-hidden="true">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="1.5"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                    19.79 19.79 0 0 1-8.63-3.07
+                    19.5 19.5 0 0 1-6-6
+                    19.79 19.79 0 0 1-3.07-8.67
+                    A2 2 0 0 1 4.11 2h3
+                    a2 2 0 0 1 2 1.72
+                    12.84 12.84 0 0 0 .7 2.81
+                    2 2 0 0 1-.45 2.11L8.09 9.91
+                    a16 16 0 0 0 6 6l1.27-1.27
+                    a2 2 0 0 1 2.11-.45
+                    12.84 12.84 0 0 0 2.81.7
+                    A2 2 0 0 1 22 16.92z">
+                    </path>
+                  </svg>
+                </div>
+
+                <div>
+                  <h3>Reservations</h3>
+                  <p>+33 1 42 60 00 00</p>
+                  <p>reservations@lamaisondor.com</p>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="reservation-note">
+              <span class="note-icon" aria-hidden="true">✦</span>
+              <p>
+                For parties of 8 or more, private dining, or special events,
+                please contact our reservations team directly.
+              </p>
+            </div>
+
           </div>
 
-          <div class="booking-info__item reveal reveal-delay-1">
-            <div class="booking-info__icon">📍</div>
-            <div class="booking-info__text">
-              <h4>Location</h4>
-              <p>127 Rue de la Gastronomie<br>New York, NY 10013</p>
-            </div>
-          </div>
 
-          <div class="booking-info__item reveal reveal-delay-2">
-            <div class="booking-info__icon">🕐</div>
-            <div class="booking-info__text">
-              <h4>Dining Hours</h4>
-              <p>Mon–Fri: 12:00 PM – 10:00 PM<br>Sat: 11:00 AM – 11:00 PM<br>Sun: 11:00 AM – 9:00 PM</p>
-            </div>
-          </div>
+          <!-- Reservation Form -->
+          <div class="reservation-form-wrapper">
 
-          <div class="booking-info__item reveal reveal-delay-3">
-            <div class="booking-info__icon">📞</div>
-            <div class="booking-info__text">
-              <h4>Phone Reservation</h4>
-              <p>+1 (212) 555-0198<br>Available daily 9:00 AM – 9:00 PM</p>
+            <div class="form-header">
+              <span class="eyebrow">Reserve Your Experience</span>
+              <h2>Book Your Table</h2>
+              <p>
+                Please complete the form below. We look forward to welcoming you.
+              </p>
             </div>
-          </div>
 
-          <div class="booking-info__item reveal reveal-delay-4">
-            <div class="booking-info__icon">🎩</div>
-            <div class="booking-info__text">
-              <h4>Dress Code</h4>
-              <p>Smart casual to formal attire.<br>Jackets recommended for gentlemen.</p>
-            </div>
-          </div>
+            <form
+              id="booking-form"
+              class="reservation-form"
+              novalidate
+            >
 
-          <!-- Opening Hours Widget -->
-          <div class="hours-widget reveal reveal-delay-5" style="margin-top: var(--space-xl);">
-            <h4 style="font-family: var(--font-heading); font-size: var(--fs-md); margin-bottom: var(--space-lg); font-weight: 600;">This Week's Hours</h4>
-            <div class="hours-widget__row" data-day="monday">
-              <span class="hours-widget__day">Monday</span>
-              <span class="hours-widget__time">12:00 PM – 10:00 PM</span>
-            </div>
-            <div class="hours-widget__row" data-day="tuesday">
-              <span class="hours-widget__day">Tuesday</span>
-              <span class="hours-widget__time">12:00 PM – 10:00 PM</span>
-            </div>
-            <div class="hours-widget__row" data-day="wednesday">
-              <span class="hours-widget__day">Wednesday</span>
-              <span class="hours-widget__time">12:00 PM – 10:00 PM</span>
-            </div>
-            <div class="hours-widget__row" data-day="thursday">
-              <span class="hours-widget__day">Thursday</span>
-              <span class="hours-widget__time">12:00 PM – 10:00 PM</span>
-            </div>
-            <div class="hours-widget__row" data-day="friday">
-              <span class="hours-widget__day">Friday</span>
-              <span class="hours-widget__time">12:00 PM – 10:00 PM</span>
-            </div>
-            <div class="hours-widget__row" data-day="saturday">
-              <span class="hours-widget__day">Saturday</span>
-              <span class="hours-widget__time">11:00 AM – 11:00 PM</span>
-            </div>
-            <div class="hours-widget__row" data-day="sunday">
-              <span class="hours-widget__day">Sunday</span>
-              <span class="hours-widget__time">11:00 AM – 9:00 PM</span>
-            </div>
-          </div>
-        </div>
+              <!-- Guest Name -->
+              <div class="form-row">
 
-        <!-- Right: Form -->
-        <div class="booking-form reveal-right">
-          <h3 class="heading-3" style="margin-bottom: var(--space-sm);">Make a Reservation</h3>
-          <p style="color: var(--color-text-secondary); font-size: var(--fs-sm); margin-bottom: var(--space-2xl);">Fields marked with <span style="color: var(--color-error);">*</span> are required</p>
+                <div class="form-group">
+                  <label for="booking-fname">
+                    First Name <span class="required">*</span>
+                  </label>
 
-          <form id="booking-form" novalidate>
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="booking-fname">First Name <span class="required">*</span></label>
-                <input class="form-input" type="text" id="booking-fname" name="firstName" placeholder="John" data-validate="required, min:2">
-                <span class="form-error"></span>
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="booking-fname"
+                    name="firstName"
+                    placeholder="Your first name"
+                    autocomplete="given-name"
+                    data-validate="required, min:2"
+                    required
+                  >
+
+                  <span class="form-error"></span>
+                </div>
+
+
+                <div class="form-group">
+                  <label for="booking-lname">
+                    Last Name <span class="required">*</span>
+                  </label>
+
+                  <input
+                    class="form-input"
+                    type="text"
+                    id="booking-lname"
+                    name="lastName"
+                    placeholder="Your last name"
+                    autocomplete="family-name"
+                    data-validate="required, min:2"
+                    required
+                  >
+
+                  <span class="form-error"></span>
+                </div>
+
               </div>
-              <div class="form-group">
-                <label class="form-label" for="booking-lname">Last Name <span class="required">*</span></label>
-                <input class="form-input" type="text" id="booking-lname" name="lastName" placeholder="Doe" data-validate="required, min:2">
-                <span class="form-error"></span>
-              </div>
-            </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="booking-email">Email <span class="required">*</span></label>
-                <input class="form-input" type="email" id="booking-email" name="email" placeholder="john@example.com" data-validate="required, email">
-                <span class="form-error"></span>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="booking-phone">Phone <span class="required">*</span></label>
-                <input class="form-input" type="tel" id="booking-phone" name="phone" placeholder="+1 (555) 000-0000" data-validate="required, phone">
-                <span class="form-error"></span>
-              </div>
-            </div>
 
-            <div class="form-row">
-              <div class="form-group">
-                <label class="form-label" for="booking-date">Date <span class="required">*</span></label>
-                <input class="form-input" type="date" id="booking-date" name="date" data-validate="required, date">
-                <span class="form-error"></span>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="booking-time">Time <span class="required">*</span></label>
-                <select class="form-select" id="booking-time" name="time" data-validate="required">
-                  <option value="">Select a time</option>
-                  <option value="12:00">12:00 PM</option>
-                  <option value="12:30">12:30 PM</option>
-                  <option value="13:00">1:00 PM</option>
-                  <option value="13:30">1:30 PM</option>
-                  <option value="18:00">6:00 PM</option>
-                  <option value="18:30">6:30 PM</option>
-                  <option value="19:00">7:00 PM</option>
-                  <option value="19:30">7:30 PM</option>
-                  <option value="20:00">8:00 PM</option>
-                  <option value="20:30">8:30 PM</option>
-                  <option value="21:00">9:00 PM</option>
-                </select>
-                <span class="form-error"></span>
-              </div>
-            </div>
+              <!-- Contact Details -->
+              <div class="form-row">
 
-            <div class="form-row">
+                <div class="form-group">
+                  <label for="booking-email">
+                    Email Address <span class="required">*</span>
+                  </label>
+
+                  <input
+                    class="form-input"
+                    type="email"
+                    id="booking-email"
+                    name="email"
+                    placeholder="you@example.com"
+                    autocomplete="email"
+                    data-validate="required, email"
+                    required
+                  >
+
+                  <span class="form-error"></span>
+                </div>
+
+
+                <div class="form-group">
+                  <label for="booking-phone">
+                    Phone Number <span class="required">*</span>
+                  </label>
+
+                  <input
+                    class="form-input"
+                    type="tel"
+                    id="booking-phone"
+                    name="phone"
+                    placeholder="+33 1 23 45 67 89"
+                    autocomplete="tel"
+                    data-validate="required, phone"
+                    required
+                  >
+
+                  <span class="form-error"></span>
+                </div>
+
+              </div>
+
+
+              <!-- Reservation Date and Time -->
+              <div class="form-row">
+
+                <div class="form-group">
+                  <label for="booking-date">
+                    Preferred Date <span class="required">*</span>
+                  </label>
+
+                  <input
+                    class="form-input"
+                    type="date"
+                    id="booking-date"
+                    name="date"
+                    data-validate="required, date"
+                    aria-describedby="booking-date-help"
+                    required
+                  >
+
+                  <small id="booking-date-help" class="form-help">
+                    Please select a future reservation date.
+                  </small>
+
+                  <span class="form-error"></span>
+                </div>
+
+
+                <div class="form-group">
+                  <label for="booking-time">
+                    Preferred Time <span class="required">*</span>
+                  </label>
+
+                  <select
+                    class="form-select"
+                    id="booking-time"
+                    name="time"
+                    data-validate="required"
+                    required
+                  >
+                    <option value="">Select a time</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="12:30">12:30 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="13:30">1:30 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="14:30">2:30 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="18:30">6:30 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="19:30">7:30 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                    <option value="20:30">8:30 PM</option>
+                    <option value="21:00">9:00 PM</option>
+                    <option value="21:30">9:30 PM</option>
+                    <option value="22:00">10:00 PM</option>
+                  </select>
+
+                  <span class="form-error"></span>
+                </div>
+
+              </div>
+
+
+              <!-- Number of Guests -->
               <div class="form-group">
-                <label class="form-label" for="booking-guests">Number of Guests <span class="required">*</span></label>
-                <select class="form-select" id="booking-guests" name="guests" data-validate="required">
-                  <option value="">Select guests</option>
+                <label for="booking-guests">
+                  Number of Guests <span class="required">*</span>
+                </label>
+
+                <select
+                  class="form-select"
+                  id="booking-guests"
+                  name="guests"
+                  data-validate="required"
+                  aria-describedby="guest-help"
+                  required
+                >
+                  <option value="">Select number of guests</option>
                   <option value="1">1 Guest</option>
                   <option value="2">2 Guests</option>
                   <option value="3">3 Guests</option>
@@ -213,132 +397,283 @@
                   <option value="6">6 Guests</option>
                   <option value="7">7 Guests</option>
                   <option value="8">8 Guests</option>
-                  <option value="10">10+ (Private Dining)</option>
+                  <option value="10+">10+ Guests — Private Dining</option>
                 </select>
+
+                <small
+                  id="guest-help"
+                  class="form-help"
+                  aria-live="polite"
+                ></small>
+
                 <span class="form-error"></span>
               </div>
+
+
+              <!-- Occasion -->
               <div class="form-group">
-                <label class="form-label" for="booking-occasion">Occasion</label>
-                <select class="form-select" id="booking-occasion" name="occasion">
-                  <option value="">Select (optional)</option>
+                <label for="booking-occasion">
+                  Special Occasion
+                  <span class="optional">(Optional)</span>
+                </label>
+
+                <select
+                  class="form-select"
+                  id="booking-occasion"
+                  name="occasion"
+                >
+                  <option value="">Select an occasion</option>
                   <option value="birthday">Birthday</option>
                   <option value="anniversary">Anniversary</option>
                   <option value="business">Business Dinner</option>
-                  <option value="date">Date Night</option>
-                  <option value="celebration">Celebration</option>
+                  <option value="celebration">Special Celebration</option>
                   <option value="other">Other</option>
                 </select>
+
+                <span class="form-error"></span>
               </div>
-            </div>
 
-            <div class="form-group">
-              <label class="form-label" for="booking-requests">Special Requests</label>
-              <textarea class="form-textarea" id="booking-requests" name="requests" placeholder="Dietary requirements, seating preferences, special arrangements..." rows="4"></textarea>
-            </div>
 
-            <button type="submit" class="btn btn--primary btn--lg" style="width: 100%;" id="booking-submit">
-              Confirm Reservation <span class="btn-icon">→</span>
-            </button>
+              <!-- Special Requests -->
+              <div class="form-group">
+                <label for="booking-requests">
+                  Special Requests
+                  <span class="optional">(Optional)</span>
+                </label>
 
-            <p style="text-align: center; margin-top: var(--space-lg); font-size: var(--fs-xs); color: var(--color-text-muted);">
-              By making a reservation, you agree to our cancellation policy.<br>
-              For parties of 10+, please call us directly.
+                <textarea
+                  class="form-textarea"
+                  id="booking-requests"
+                  name="requests"
+                  rows="4"
+                  placeholder="Let us know if you have any dietary requirements or special requests..."
+                ></textarea>
+
+                <span class="form-error"></span>
+              </div>
+
+
+              <!-- Submit -->
+              <button
+                type="submit"
+                class="btn btn-primary btn-full"
+                id="booking-submit"
+              >
+                <span class="btn-text">Request Reservation</span>
+
+                <span
+                  class="btn-loader"
+                  aria-hidden="true"
+                  style="display: none;"
+                >
+                  <span class="spinner"></span>
+                  Processing...
+                </span>
+              </button>
+
+              <p class="form-disclaimer">
+                By submitting this form, you agree to our reservation policy.
+                Your table will be confirmed by email or phone.
+              </p>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Reservation Policy -->
+    <section class="reservation-policy section-padding">
+      <div class="container">
+
+        <div class="section-heading centered">
+          <span class="eyebrow">Before Your Visit</span>
+          <h2>Reservation <span>Information</span></h2>
+        </div>
+
+        <div class="policy-grid">
+
+          <div class="policy-card">
+            <div class="policy-number">01</div>
+            <h3>Confirmation</h3>
+            <p>
+              All reservations are subject to confirmation. You will receive
+              a confirmation message from our team.
             </p>
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+          </div>
 
-  <!-- Private Dining CTA -->
-  <section class="section section--sm" style="background: var(--color-bg-alt);">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="label">Private Events</span>
-        <h2 class="heading-2">Private Dining Rooms</h2>
-        <div class="section-divider"></div>
-        <p class="body-lg">For intimate gatherings of 10 to 80 guests, our private dining rooms offer an exclusive setting with bespoke menus and dedicated service.</p>
-      </div>
-      <div class="features-grid">
-        <div class="feature-card reveal reveal-delay-1">
-          <div class="feature-card__icon">🏛️</div>
-          <h3 class="feature-card__title">The Salon Privé</h3>
-          <p class="feature-card__desc">An intimate room for up to 12 guests, perfect for business dinners and small celebrations with a fireplace and garden view.</p>
+          <div class="policy-card">
+            <div class="policy-number">02</div>
+            <h3>Arrival</h3>
+            <p>
+              We kindly request that you arrive within 15 minutes of your
+              reservation time to ensure the best experience.
+            </p>
+          </div>
+
+          <div class="policy-card">
+            <div class="policy-number">03</div>
+            <h3>Cancellation</h3>
+            <p>
+              Please notify us at least 24 hours in advance if you need to
+              cancel or modify your reservation.
+            </p>
+          </div>
+
+          <div class="policy-card">
+            <div class="policy-number">04</div>
+            <h3>Dress Code</h3>
+            <p>
+              Smart casual attire is appreciated. We ask guests to dress
+              appropriately for our dining atmosphere.
+            </p>
+          </div>
+
         </div>
-        <div class="feature-card reveal reveal-delay-2">
-          <div class="feature-card__icon">✨</div>
-          <h3 class="feature-card__title">The Grand Gallery</h3>
-          <p class="feature-card__desc">Our flagship event space accommodating up to 80 guests with a private bar, stage, and panoramic skyline views.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-3">
-          <div class="feature-card__icon">🍷</div>
-          <h3 class="feature-card__title">The Wine Cellar</h3>
-          <p class="feature-card__desc">Dine surrounded by our prized wine collection in this atmospheric underground vault for up to 20 guests.</p>
-        </div>
+
       </div>
-      <div class="text-center" style="margin-top: var(--space-2xl);">
-        <a href="contact.html" class="btn btn--outline reveal">Inquire About Private Events <span class="btn-icon">→</span></a>
-      </div>
-    </div>
-  </section>
+    </section>
+
+  </main>
+
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer__grid">
-        <div class="footer__brand">
-          <div class="footer__brand-name">La Maison d'Or</div>
-          <p class="footer__brand-desc">A sanctuary of culinary excellence where tradition meets innovation.</p>
-          <div class="footer__social">
-            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
-            <a href="#" class="footer__social-link" aria-label="Instagram">📷</a>
-            <a href="#" class="footer__social-link" aria-label="Twitter">𝕏</a>
-            <a href="#" class="footer__social-link" aria-label="TripAdvisor">✈</a>
+
+      <div class="footer-main">
+
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-main">La Maison</span>
+            <span class="logo-sub">D'OR</span>
+          </a>
+
+          <p>
+            An intimate celebration of French culinary artistry,
+            where tradition meets imagination.
+          </p>
+
+          <div class="footer-socials">
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Tripadvisor">Tripadvisor</a>
           </div>
         </div>
-        <div>
-          <h4 class="footer__heading">Quick Links</h4>
-          <ul class="footer__links">
-            <li><a href="index.html" class="footer__link">Home</a></li>
-            <li><a href="menu.html" class="footer__link">Our Menu</a></li>
-            <li><a href="booking.html" class="footer__link">Reservations</a></li>
-            <li><a href="contact.html" class="footer__link">Contact Us</a></li>
-          </ul>
+
+
+        <div class="footer-column">
+          <h3>Explore</h3>
+          <a href="menu.html">Our Menu</a>
+          <a href="about.html">Our Story</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="reservation.html">Reservations</a>
         </div>
-        <div>
-          <h4 class="footer__heading">Hours</h4>
-          <ul class="footer__links">
-            <li class="footer__link" style="cursor:default;">Mon–Fri: 12:00 – 22:00</li>
-            <li class="footer__link" style="cursor:default;">Saturday: 11:00 – 23:00</li>
-            <li class="footer__link" style="cursor:default;">Sunday: 11:00 – 21:00</li>
-          </ul>
+
+
+        <div class="footer-column">
+          <h3>Visit Us</h3>
+          <p>18 Rue de la Lumière</p>
+          <p>Paris, France 75001</p>
+          <a href="contact.html">Get Directions</a>
         </div>
-        <div class="footer__newsletter">
-          <h4 class="footer__heading">Newsletter</h4>
-          <p style="font-size: var(--fs-sm); color: var(--color-text-secondary);">Subscribe for seasonal menus and exclusive events.</p>
-          <div class="footer__newsletter-input">
-            <input type="email" placeholder="Your email" aria-label="Email for newsletter">
-            <button aria-label="Subscribe">→</button>
-          </div>
+
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <a href="tel:+33142600000">+33 1 42 60 00 00</a>
+          <a href="mailto:reservations@lamaisondor.com">
+            reservations@lamaisondor.com
+          </a>
+          <p>Tuesday – Sunday</p>
+          <p>12:00 PM – 11:00 PM</p>
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+        <p>
+          © 2026 La Maison d'Or. All rights reserved.
+        </p>
+
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
         </div>
       </div>
-      <div class="footer__bottom">
-        <span>&copy; 2024 La Maison d'Or. All rights reserved.</span>
-        <span>Crafted with passion & precision</span>
-      </div>
+
     </div>
   </footer>
 
+
   <!-- Success Modal -->
-  <div class="modal-overlay" id="success-modal">
-    <div class="modal">
-      <div class="modal__icon">✓</div>
-      <h3 class="modal__title">Reservation Confirmed!</h3>
-      <p class="modal__text">Thank you for choosing La Maison d'Or. We have received your reservation and will send a confirmation to your email shortly.</p>
-      <button class="btn btn--primary modal__close">Close</button>
+  <div
+    class="modal"
+    id="success-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="success-modal-title"
+    aria-hidden="true"
+  >
+
+    <div class="modal-overlay"></div>
+
+    <div class="modal-content">
+
+      <button
+        type="button"
+        class="modal-close"
+        id="modal-close"
+        aria-label="Close confirmation dialog"
+      >
+        &times;
+      </button>
+
+      <div class="modal-icon" aria-hidden="true">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="48"
+          height="48"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M20 6 9 17l-5-5"></path>
+        </svg>
+      </div>
+
+      <span class="eyebrow">Thank You</span>
+
+      <h2 id="success-modal-title">Reservation Confirmed!</h2>
+
+      <p id="success-modal-message">
+        Your reservation request has been received.
+        We will contact you shortly to confirm your table.
+      </p>
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="modal-done"
+      >
+        Done
+      </button>
+
     </div>
+
   </div>
 
+
+  <!-- JavaScript -->
   <script src="js/main.js"></script>
+
 </body>
 </html>
