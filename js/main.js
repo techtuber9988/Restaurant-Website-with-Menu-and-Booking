@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initParallax();
 });
 /* ── Page Loader ── */
+
 function initLoader() {
   const loader = document.querySelector('.loader');
 
